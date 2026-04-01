@@ -1,6 +1,48 @@
-[
+[   
     {
-        "title": "currently: applying to college",
+        "title": "currently: working on stasis!",
+        "desc": "my newest hackathon program to fund teenagers' hardware projects and fly them out to a hackathon in austin. I'm very excited.",
+        "date": "mar - may 2026",
+        "tags": ["COTA I'm on my way"]
+    },
+
+    {
+        "title": "experiencing blue jackets hockey.",
+        "desc": "why do we do this to ourselves. up 3-0 in the third only to throw it all away. to BOSTON?",
+        "date": "mar 2026",
+        "tags": ["cooked"]
+    },
+
+    {
+        "title": "frc buckeye regional",
+        "desc": "robotics competition done and dusted. we did pretty well, kinda got screwed over by our bracket but we ball.",
+        "date": "mar 2026",
+        "tags": ["miami valley next", "goal is to not break the robot on the first day"]
+    },
+
+    {
+        "title": "HOLI KE DIN",
+        "desc": "HAPPY HOLI",
+        "date": "mar 2026",
+        "tags": ["rediscovered my love for throwing things at people and running in circles"]
+    }, 
+
+    {
+        "title": "campfire flagship in LA",
+        "desc": "had to make a project using a magstripe reader by michael reeves and william osman at campfire flagship. it was a lot of fun.",
+        "date": "feb 2026",
+        "tags": ["the backyard scientist is so cool", "still haven't seen the rancid los angeles river but I'll get there"]
+    }, 
+
+    {
+        "title": "midnight in vienna",
+        "desc": "went to a murder mystery hackathon in vienna and made some awesome games. Shoutout [anton](https://github.com/anton2026gamca/) and [lev](https://github.com/onlyth3best) for being cool teammates.",
+        "date": "jan 2026",
+        "tags": ["they have so many castles", "why do they need so many castles", "wiener schnitzel"]
+    }, 
+
+    {
+        "title": "applying to college",
         "desc": "who knew this stuff was hard?",
         "date": "oct - dec 2025",
         "tags": ["they said it would be but I thought they were lying"]
