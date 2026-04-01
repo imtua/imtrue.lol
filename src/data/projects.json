@@ -165,9 +165,9 @@
   {
     "name": "Autonomous Manufacturing Robots",
     "slug": "autorob",
-    "description": "A way for the blind/visually impaired to experience the world through computer vision.",
+    "description": "Small-scale fleet of autonomous robots that work in warehouses to transport shipping goods. I worked on the stations for these bots to pick up/drop off cargo.",
     "extendedDesc": "**extended description coming soon**",
-    "date": "sep 2024",
+    "date": "may - oct 2023",
     "buttons": ["demo", "git repo"],
     "buttonLinks": [
       "https://hc-cdn.hel1.your-objectstorage.com/s/v3/f453f3565a13283371f4fcb7ffa93f84a36ad261_vid-20231107-wa0001_3_.mp4",
