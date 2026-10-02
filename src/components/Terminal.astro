@@ -55,6 +55,7 @@ const { placeholder = "type back to return to terminal", termPage = false } =
   }
 
   const pages = ["about", "projects", "contact", "now", "photodome"];
+  const base = document.querySelector("base")?.href || `${window.location.origin}/imtrue.lol/`;
   //document.querySelectorAll("headings").forEach(element => pages.push(element.innerHTML)); I can't use this code cause this isn't in the DOM of the terminal page but I'm keeping this anyway because I'm proud of it.
 
   const form = document.getElementById("inp") as HTMLInputElement;
@@ -68,15 +69,15 @@ const { placeholder = "type back to return to terminal", termPage = false } =
       form.value = "";
 
       if (command === "exit") {
-        window.location.href = "/";
+        window.location.href = base;
 
       } else if (isTerminalPage && pages.find((element) => command === "cd " + element)) {
         //I am a wizard.
         window.location.href =
-          "/" + pages.find((element) => command === "cd " + element);
+          base + pages.find((element) => command === "cd " + element);
 
       } else if (!isTerminalPage && (command === "cd ./" || command === "back")) {
-        window.location.href = "/terminal";
+        window.location.href = base + "terminal";
 
       } else if (command === "sudo rm -rf /*") {
         console.log("you think you're funny, don't you?");

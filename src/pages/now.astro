@@ -5,6 +5,8 @@ import "../styles/now.css";
 import Nowevent from "../components/Nowevent.astro";
 import data from "../data/events.json";
 import Terminal from "../components/Terminal.astro";
+
+const base = import.meta.env.BASE_URL;
 ---
 
 <html>
@@ -15,10 +17,10 @@ import Terminal from "../components/Terminal.astro";
 
 <Layout>
   <div
-    style="background-image: url('/noise.webp');"
+    style={`background-image: url('${base}noise.webp');`}
     class="fixed inset-0 bg-center bg-no-repeat bg-cover overflow-hidden w-screen h-screen"
   >
-    <p onclick="window.location.href='terminal'"
+    <p onclick={`window.location.href='${base}terminal'`}
       style="font-family:static"
       class="text-[4em] cursor-pointer tracking-[0.7rem] pl-8 text-[#C4CDDE] mt-[1rem] mb-[1rem] fixed top-0 left-0 z-20"
     >

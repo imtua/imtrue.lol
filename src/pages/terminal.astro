@@ -3,6 +3,8 @@ import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
 import "../styles/terminal.css";
 import Termy from "../components/Terminal.astro";
+
+const base = import.meta.env.BASE_URL;
 ---
 
 <html>
@@ -13,7 +15,7 @@ import Termy from "../components/Terminal.astro";
 
 <Layout>
   <div
-    style="background-image: url('/noise.webp');"
+    style={`background-image: url('${base}noise.webp');`}
     class="fixed inset-0 bg-cover overflow-y-hidden overflow-x-hidden w-screen flex items-center justify-center"
   >
     <div
