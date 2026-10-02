@@ -657,7 +657,7 @@ export default function DomeGallery({
       `;
       captionBox.textContent =
         rawAlt ||
-        "meghana has forgotten to write a caption. This was probably really cool though. Woah! So cool.";
+        "imtu? has forgotten to write a caption. This was probably really cool though. Woah! So cool.";
       viewerRef.current.appendChild(captionBox);
 
       setTimeout(() => {

@@ -1,6 +1,6 @@
-# meghanawebv2
+# imtrue.lol
 My new personal website, made with Astro and the despair of CSS
-> visit at [meghana.co](https://meghana.co)
+> visit at [imtrue.lol](https://imtrue.lol)
 
 
 <img style="width:500px" src="public/prev.png">

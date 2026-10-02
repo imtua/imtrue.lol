@@ -1,20 +1,32 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Dome from "../components/Dome.jsx";
-import data from "../data/photodome.json";
 import "../styles/global.css";
 import Terminal from "../components/Terminal.astro";
 
+const photoFiles = import.meta.glob(
+  "../assets/photos/*.{png,jpg,jpeg,webp}",
+  {
+    eager: true,
+    import: "default",
+    query: "?url",
+  },
+);
 
-const imgs = data.map((img) => ({
-  src: `../photodome/${img.src}.webp`,
-  alt: img.caption,
-}));
+const imgs = Object.entries(photoFiles)
+  .sort(([first], [second]) => first.localeCompare(second, undefined, { numeric: true }))
+  .map(([path, src]) => {
+    const filename = path.split("/").pop()?.replace(/\.[^.]+$/, "") || "photo";
+    return {
+      src,
+      alt: filename,
+    };
+  });
 ---
 
 <html>
   <head>
-    <title>meghana.co - photodome</title>
+    <title>imtrue.lol - photodome</title>
   </head>
 </html>
 
