@@ -55,7 +55,7 @@ const { placeholder = "type back to return to terminal", termPage = false } =
   }
 
   const pages = ["about", "projects", "contact", "now", "photodome"];
-  const base = document.querySelector("base")?.href || `${window.location.origin}/imtrue.lol/`;
+  const base = document.querySelector("base")?.href || "/";
   //document.querySelectorAll("headings").forEach(element => pages.push(element.innerHTML)); I can't use this code cause this isn't in the DOM of the terminal page but I'm keeping this anyway because I'm proud of it.
 
   const form = document.getElementById("inp") as HTMLInputElement;

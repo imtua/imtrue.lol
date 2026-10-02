@@ -10,7 +10,6 @@ import vercel from '@astrojs/vercel';
 // https://astro.build/config
 export default defineConfig({
   output: 'static',
-  base: '/imtrue.lol',
   site: 'https://imtrue.lol',
 
   vite: {
