@@ -31,20 +31,20 @@ const base = import.meta.env.BASE_URL;
       <div
         class="headings text-[#C4CDDE] text-shadow-lg ml-[2rem] mr-[2rem] mt-[2rem] mb-[2rem] flex flex-col gap-[1.5rem]"
       >
-        <a href="about" id="about" class="heading flex">
+        <a href="/about" id="about" class="heading flex">
           <span>></span><p class="">about</p>
         </a>
-        <a href="projects" id="projects" class="heading flex">
+        <a href="/projects" id="projects" class="heading flex">
           <span>></span><p class="">projects</p>
         </a>
-        <a href="contact" id="contact" class="heading flex">
+        <a href="/contact" id="contact" class="heading flex">
           <span>></span><p class="">contact</p>
         </a>
         <div class="flex flex-col gap-[1.5rem] lg:flex-row lg:gap-[4rem]">
-          <a href="now" id="now" class="heading flex">
+          <a href="/now" id="now" class="heading flex">
             <span>></span><p class="">now</p>
           </a>
-          <a href="photodome" id="photodome" class="heading flex">
+          <a href="/photodome" id="photodome" class="heading flex">
             <span>></span><p class="">photodome</p>
           </a>
         </div>
@@ -124,7 +124,7 @@ const base = import.meta.env.BASE_URL;
 
     if (e.code === "Enter") {
       e.preventDefault();
-      window.location.href = tags[i].id;
+      window.location.href = "/" + tags[i].id;
     }
   });
 </script>
